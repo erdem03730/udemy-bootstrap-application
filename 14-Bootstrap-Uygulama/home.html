@@ -22,12 +22,11 @@
     .jumbotron {
       padding-top: 100px;
     }
-    
   </style>
 
 </head>
 
-<body class="mx-auto my-4">
+<body>
 
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top border-bottom">
@@ -43,140 +42,161 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
           </li>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron bg-dark text-white">
+  <header>
+    <div class="jumbotron bg-dark text-white">
+      <div class="container">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+          <p class="my-3">It uses utility classes for typography and spacing to space content out within the larger container.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p class="lead mb-0">
+            <a class="text-white" href="#" role="button">Continue reading...</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
     <div class="container">
-      <div class="col-md-6">
-        <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <p class="lead">
-          <a class="text-white" href="#" role="button">Continue reading...</a>
-        </p>
+      <!-- Yukarıdakilerle aynı hizada olması için container yapıyoruz. -->
+      <div class="row">
+        <!-- Burayı satır yapıyoruz ve bunu altında da bu satırı ikiye böleceğiz.  -->
+        <div class="col-md-8">
+          <!-- Burada yukarıda kurduğumuz satırı 8 grid'e koyuyoruz. -->
+          <div class="card mb-4">
+            <img src="img/1.jpg" class="card-img-top img-thumbnail" alt="404">
+            <div class="card-body">
+              <h4 class="card-title">Post title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn btn-secondary">Read more...</button>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Posted on May 30, 2020</small>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <img src="img/2.jpg" class="card-img-top img-thumbnail" alt="404">
+            <div class="card-body">
+              <h4 class="card-title">Post title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn btn-secondary">Read more...</button>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Posted on May 30, 2020</small>
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <img src="img/3.jpg" class="card-img-top img-thumbnail" alt="404">
+            <div class="card-body">
+              <h4 class="card-title">Post title</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <button type="button" class="btn btn-secondary">Read more...</button>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Posted on May 30, 2020</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <!-- Burada da 4 grid kullanarak 12'ye tamamlıyoruz. -->
+          <!-- Toplamda da iki ader col olduğu için row ikiye bölünmüş oldu. -->
+          <!-- Responsive'liğini de md device'lara göre ayarladık. -->
+          <!-- Bu çözünürlüğün altına düşünce bu ikiye bölünmüş kısımlar altalta sıralanacak. -->
+          <!-- Önce tanımladığımız yukarda kalacak. -->
+          <div class="card bg-light mb-4" style="max-width: 18rem;">
+            <div class="card-header">Search</div>
+            <div class="card-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-secondary">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-light mb-4" style="max-width: 18rem;">
+            <div class="card-header">Categories</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Html</a>
+                    </li>
+                    <li>
+                      <a href="#">Angular</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Html</a>
+                    </li>
+                    <li>
+                      <a href="#">Angular</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-light mb-4" style="max-width: 18rem;">
+            <div class="card-header">Widget</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vero voluptas sint. Est, harum, et.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
-  <!-- w-75 -->
-  <div class="w-75 mr-auto">
-    <div class="card mb-3 mt-4 ml-4">
-      <img src="img/1.jpg" class="card-img-top img-fluid" alt="404">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a class="btn btn-secondary" href="#" role="button">Read More</a>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Posted on May 30 - 2020</small>
-      </div>
-    </div>
-
-    <div class="card mb-3 mt-4 ml-4">
-      <img src="img/1.jpg" class="card-img-top img-fluid" alt="404">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a class="btn btn-secondary" href="#" role="button">Read More</a>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Posted on May 30 - 2020</small>
-      </div>
-    </div>
-
-    <div class="card mb-3 mt-4 ml-4">
-      <img src="img/1.jpg" class="card-img-top img-fluid" alt="404">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a class="btn btn-secondary" href="#" role="button">Read More</a>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Posted on May 30 - 2020</small>
-      </div>
-    </div>
-
+  <div class="container">
+    <!-- Page navigation -->
     <nav aria-label="Page navigation example">
       <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
         <li class="page-item"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="#">2</a></li>
         <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
       </ul>
     </nav>
   </div>
 
-  <div class="w-25 ml-auto">
-    <!-- w-25 -->
-    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Secondary card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Secondary card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Secondary card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Footer -->
   <footer class="page-footer font-small text-white bg-dark">
-    <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
       <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
     </div>
-    <!-- Copyright -->
   </footer>
-
-
-  <!-- Tamamlayamadığım eksikler;
-1- Sayfayı iki'ye bölemedim.
-2- w-75, w-25 div'lerini yanyana getiremedim.
-(Muhtemelen position özelliğiyle ilgisi olabilir ama emin değilim.)
-3- Jumbotron'daki yazıyı olması gerektiği gibi yapamadım.
-4- Footer'ı yeterince genişletemedim ve alttaki boşluğu kapatamadım.
-Ayrıca footer'daki tüm yazılar beyaz değil.
- -->
-
-
-
-
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

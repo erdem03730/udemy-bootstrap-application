@@ -16,3 +16,6 @@
 
   Sadece direkt olarak origin master olarak belirlediğimiz bu repo'ya bunu push'luyoruz.
   git push -u origin master, yazarak.
+
+  Şimdi öğrenmen gereken şey "pull etmek".
+  Macbook'tan bu verileri Github üzerinden çekmek.

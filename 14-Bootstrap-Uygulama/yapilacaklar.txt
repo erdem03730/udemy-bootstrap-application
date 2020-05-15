@@ -1,0 +1,9 @@
+
+    <!-- Tamamlayamadığım eksikler;
+  1- Sayfayı iki'ye bölemedim.
+  2- w-75, w-25 div'lerini yanyana getiremedim.
+  (Muhtemelen position özelliğiyle ilgisi olabilir ama emin değilim.)
+  3- Jumbotron'daki yazıyı olması gerektiği gibi yapamadım.
+  4- Footer'ı yeterince genişletemedim ve alttaki boşluğu kapatamadım.
+  Ayrıca footer'daki tüm yazılar beyaz değil.
+   -->

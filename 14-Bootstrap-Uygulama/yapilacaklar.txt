@@ -7,3 +7,12 @@
   4- Footer'ı yeterince genişletemedim ve alttaki boşluğu kapatamadım.
   Ayrıca footer'daki tüm yazılar beyaz değil.
    -->
+
+   Artık bu dosyada bir değişiklik yaptığımda push ederken
+   remote etmeme gerek yok.
+   Yani şu satıra; git remote add origin https://github.com/erdem03730/udemy-bootstrap-application.git
+   artık gerek yok.
+   Sadece bir kere uzak depoya commit edeceğimizi bildirmek için kullanıyoruz bunu.
+
+  Sadece direkt olarak origin master olarak belirlediğimiz bu repo'ya bunu push'luyoruz.
+  git push -u origin master, yazarak.
